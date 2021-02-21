@@ -18,7 +18,7 @@ export const model = [
     new ColumnsBlock([
         '111111111111111111',
         '22222222222222222',
-        '33'
+        '333423423432424'
     ],{
         styles: {
             color: 'red',
