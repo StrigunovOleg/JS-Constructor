@@ -17,7 +17,8 @@ export class Sidebar {
     get template() {
         return [
             block('text'),
-            block('title')
+            block('title'),
+            block('columns')
         ].join('')
     }
 
@@ -28,9 +29,10 @@ export class Sidebar {
         const value = event.target.value.value
         const styles = event.target.styles.value
 
+
         const newBlock = type === 'text'
          ? new TextBlock(value, {styles})
-         : new TitleBlock(value, {styles})
+         : new ColumnsBlock(value, {styles})
 
         event.target.value.value = ''
         event.target.styles.value = ''
